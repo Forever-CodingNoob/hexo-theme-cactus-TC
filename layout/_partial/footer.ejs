@@ -6,6 +6,10 @@
     <%= startYear >= endYear ? endYear : startYear + "-" + endYear %>
     <%= config.author || config.title %>
   </div>
+  <div class="footer-middle">
+    <%= __('footer.credits.poweredby') %> <a href="<%- theme.poweredby.url %>"><%= theme.poweredby.name %></a>
+    <%= __('footer.credits.with') %> <a href="<%- theme.theme.url %>"><%- theme.theme.name %></a>
+  </div>
   <div class="footer-right">
     <nav>
       <ul>

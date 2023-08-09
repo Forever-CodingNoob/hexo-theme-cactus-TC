@@ -13,6 +13,9 @@ icons:
 
 footer:
   copyright: Copyright
+  credits:
+    poweredby: Powered by
+    with: with
 
 index:
   find_me_on: Find me on
