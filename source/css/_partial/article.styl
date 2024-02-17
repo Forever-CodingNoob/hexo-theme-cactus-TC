@@ -112,23 +112,27 @@ article
       color: $color-meta
       text-align: center
       font-size: .9em
+    
+    .info, .success, .danger, .warning
+      padding-left: 10px
+      border-left-width: 4px 
+      border-left-style: solid
+      display: flex
+      flex-direction: column
+      overflow-wrap: break-word
 
     .info
-      padding-left: 10px
       background-color: rgba(52,152,219,.3)
-      border-left: 4px solid rgb(52,152,219)
+      border-left-color: rgb(52,152,219)
     .success
-      padding-left: 10px
       background-color: rgba(46,204,113,.3)
-      border-left: 4px solid rgb(46,204,113)
+      border-left-color: rgb(46,204,113)
     .warning
-      padding-left: 10px
       background-color: rgba(241,196,15,.3)
-      border-left: 4px solid rgb(241,196,15)
+      border-left-color: rgb(241,196,15)
     .danger
-      padding-left: 10px
       background-color: rgba(231,76,60,.3)
-      border-left: 4px solid rgb(231,76,60)
+      border-left-color: rgb(231,76,60)
 
 .posttitle
   text-transform: none
@@ -136,9 +140,9 @@ article
   line-height: 1.25
 
 .article-tag
-  .tag-link
+  .tag-link, .p-category
     &:before
-      content: "#"
+      /* content: "#" */
     underline(10px, $color-link)
 
 .article-category
